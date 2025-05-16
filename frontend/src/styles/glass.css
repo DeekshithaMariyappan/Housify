@@ -1,0 +1,153 @@
+/* General reset */
+body {
+  background: linear-gradient(135deg, rgba(30, 144, 255, 0.8), rgba(255, 127, 80, 0.8)), url('https://img.freepik.com/premium-photo/house-white-background-3d-illustration_667286-9245.jpg') no-repeat center center fixed;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+  
+/* Navbar */
+.navbar {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+  
+.navbar h2 {
+  color: #222;
+  margin: 0;
+}
+  
+.navbar div a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #1e90ff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+  
+.navbar div a:hover {
+  color: #004aad;
+}
+  
+/* Enhanced Glassmorphism Effect */
+.glass-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 2rem auto;
+  color: #222;
+}
+  
+/* Typography */
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+  
+/* Input fields */
+input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+  
+/* Buttons */
+button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1e90ff, #006ad1);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+  
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+  
+/* Cards */
+.house-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+  
+.house-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+  
+.house-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+/* Add padding to the main content to prevent it from overlapping with the fixed navbar */
+.main-content {
+  padding-top: 70px; /* Adjust this value based on the navbar height */
+}
+
+/* Profile Image */
+.profile-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #1e90ff;
+  box-shadow: 0 4px 16px rgba(30, 144, 255, 0.2);
+  background: #fff;
+}
+
+.edit-image-btn {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: #fff;
+  border: 1px solid #1e90ff;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(30, 144, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-image-btn:hover {
+  background: #1e90ff;
+  color: #fff;
+}
